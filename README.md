@@ -10,9 +10,11 @@ An intelligent AI-powered study assistant that helps you learn from your documen
 - 🎨 **Modern UI**: Beautiful dark theme with glassmorphism effects
 - 📊 **Source Citations**: See which document chunks were used for each answer
 - ⚡ **Fast Processing**: Efficient chunking and retrieval system
-- 🔒 **Privacy First**: All processing happens locally, documents stay on your machine
+- 🔒 **Privacy First**: All processing happens locally,documents stay on  machine
 
 ## 🚀 Quick Start
+- 🔒 **Privacy First**: All processing happens locally,documents stay on  machine
+
 
 ### Prerequisites
 
