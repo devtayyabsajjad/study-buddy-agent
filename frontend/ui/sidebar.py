@@ -13,6 +13,19 @@ def render_sidebar(store):
         
         st.markdown("---")
         
+        # --- File Upload (in sidebar for Streamlit Cloud reliability) ---
+        st.markdown("### 📤 Upload Materials")
+        uploads = st.file_uploader(
+            "Upload PDF or TXT files",
+            type=["pdf", "txt"],
+            accept_multiple_files=True,
+            label_visibility="collapsed",
+            key="sidebar_file_uploader"
+        )
+        settings = {"uploads": uploads if uploads else []}
+        
+        st.markdown("---")
+        
         # --- Document Status ---
         stats = store.get_statistics()
         if stats["total_docs"] > 0:
@@ -35,7 +48,7 @@ def render_sidebar(store):
 
         st.markdown("### ⚙️ Intelligence")
         
-        settings = {}
+        
         
         # Retrieval settings
         settings["top_k"] = st.slider(
