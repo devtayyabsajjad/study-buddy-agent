@@ -18,7 +18,7 @@ class TestPDFLoader(unittest.TestCase):
             read_pdf_bytes(b"", max_size_mb=1.0)
             
         # Invalid PDF header
-        with self.assertRaises(FileValidationError):
+        with self.assertRaises(PDFProcessingError):
             read_pdf_bytes(b"Not a PDF file", max_size_mb=1.0)
 
     def test_file_size_limit(self):
